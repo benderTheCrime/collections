@@ -1,0 +1,26 @@
+{
+  "name": "@benderthecrime/collections",
+  "description": "helpful collections shamelessly copied from Python: https://docs.python.org/2/library/collections.html#module-collections",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "collections",
+    "default",
+    "defaultdict",
+    "defaultobject",
+    "counter"
+  ],
+  "maintainers": [
+    {
+      "name": "Joe Groseclose <@benderTheCrime>"
+    }
+  ],
+  "scripts": {
+    "test": "mocha ./**/*.test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
+  }
+}
