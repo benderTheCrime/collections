@@ -1,6 +1,6 @@
 {
   "name": "@benderthecrime/collections",
-  "description": "helpful collections shamelessly copied from Python: https://docs.python.org/2/library/collections.html#module-collections",
+  "description": "Helpful collections shamelessly copied from Python and ported to JS: orhttps://docs.python.org/2/library/collections.html#module-collections",
   "version": "1.0.0",
   "main": "index.js",
   "keywords": [
