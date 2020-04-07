@@ -3,7 +3,7 @@ module.exports = {
 }
 
 function DefaultObject(ctor, ...args) {
-  // NOTE: Constructed keys allow us to keep track of values 
+  // NOTE: Constructed keys allow us to keep track of values
   // with expressly setting them on the object.
   let constructedKeys = {}
 
@@ -14,13 +14,13 @@ function DefaultObject(ctor, ...args) {
     if (constructedKeys.hasOwnProperty(prop)) return (obj[prop] = constructedKeys[prop])
 
     if (typeof ctor === 'function') {
-      // NOTE: Symbols are a special case in that they have 
+      // NOTE: Symbols are a special case in that they have
       // an internal constructor function and cannot be called
       // with new.
       if (ctor === Symbol) {
         constructedKeys[prop] = Symbol()
 
-      // NOTE: Boolean supports being called with new and 
+      // NOTE: Boolean supports being called with new and
       // it returns a wrapped value when you do!
       } else {
         try {
@@ -39,7 +39,7 @@ function DefaultObject(ctor, ...args) {
     } else {
       constructedKeys[prop] = ctor
     }
-    
+
     return constructedKeys[prop]
   }
 }
